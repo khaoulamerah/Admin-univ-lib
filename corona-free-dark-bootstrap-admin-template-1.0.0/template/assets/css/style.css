@@ -7584,7 +7584,9 @@ a:not([href]):not([class]) {
   a:not([href]):not([class]):hover {
     color: inherit;
     text-decoration: none; }
-
+.Disable{
+  margin-left: 23rem;
+}
 pre,
 code,
 kbd,
