@@ -7602,7 +7602,10 @@ pre {
 
 figure {
   margin: 0 0 1rem; }
-
+.size-btn{
+  margin-top: 1.3rem;
+  height: 6vh;
+}
 img {
   vertical-align: middle;
   border-style: none; }
