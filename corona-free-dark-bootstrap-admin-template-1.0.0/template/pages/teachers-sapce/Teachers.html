@@ -93,35 +93,27 @@
           <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
-                <i class="mdi mdi-calendar text-success"></i>
+                <i class="fa-solid fa-graduation-cap"></i>
               </span>
               <span class="menu-title">Students</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../ui-features/New-accounts.html">New accounts</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../ui-features/new-enrollements.html">new enrollements</a></li>
-                <li class="nav-item"> <a class="nav-link" href="All-students.html">All students</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../student-space/New-account.html">New accounts</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../student-space/new-enrollements.html">new enrollements</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../student-space/All-students.html">All students</a></li>
               </ul>
             </div>
           </li>
 
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="../teachers-sapce/Teachers.html" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" href="Teachers.html">
               <span class="menu-icon">
-                <i class="fa-solid fa-graduation-cap"></i>
+                <i class="fa-solid fa-clipboard"></i>
               </span>
               <span class="menu-title">Teachers</span>
-              <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
-              </ul>
-            </div>
           </li>
 
           <li class="nav-item menu-items">
@@ -452,8 +444,8 @@
                 <span class="links">0 out of 235 results selected</span>
               </form>
              <div> 
-              <div class="badge badge-outline-success"> Activate</div>
-             <div class="badge badge-outline-danger">Refuse</div>
+              <div class="badge badge-outline-success btn-profile">Add new teachers</div>
+             <div class="badge badge-outline-danger">Delete</div>
              </div>
               <select name="select" id="#"class="Filtre badge badge-outline-success btn-profile">
                 <option value="#">Filters</option> 
@@ -478,11 +470,13 @@
                           <th> First name </th>
                           <th> Last name </th>
                           <th> Email</th>
-                          <th> Language </th>
-                          <th> Level</th>
+                          <th> Phone </th>
+                          <th> Gender</th>
+                          <th> id </th>
+                          <th> Groupe</th>
                           <th> Status </th>
                           <th> action </th>
-                          <th> enrollements </th>
+                          <th> Profile</th>
                           <th> date </th>
                         </tr>
                       </thead>
@@ -502,25 +496,18 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> French</td>
+                          <td>0500000</td>
+                          <td>male</td>
+                          <td>98645332</td>
+                          <td>2</td>
                           <td>
-                           <select name="level" id="level">
-                            <option value="#">A1</option>
-                            <option value="#">A2</option>
-                            <option value="#">B1</option>
-                            <option value="#">B2</option>
-                            <option value="#">C1</option>
-                            <option value="#">C2</option>
-                          </select>
-                        </td>
-                          <td>
-                            <div class="badge badge-outline-danger">pending</div>
+                            <div class="badge badge-outline-success">Working</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-success">Activate</div>
+                            <div class="badge badge-outline-danger">Delete</div> 
                           </td>
                           <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="#">Profile</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -539,22 +526,15 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> English</td>
-                          <td> 
-                            <select name="level" id="level">
-                              <option value="#">A1</option>
-                              <option value="#">A2</option>
-                              <option value="#">B1</option>
-                              <option value="#">B2</option>
-                              <option value="#">C1</option>
-                              <option value="#">C2</option>
-                            </select>
-                          </td>
+                          <td>0500000</td>
+                          <td>male</td>
+                          <td>98645332</td>
+                          <td>2</td>
                           <td>
                             <div class="badge badge-outline-danger">pending</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-success">Activate</div>
+                            <div class="badge badge-outline-danger">Delete</div> 
                           </td>
                           <td>
                             <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Profile</a></div>
@@ -576,22 +556,15 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> English</td>
-                          <td> 
-                            <select name="level" id="level">
-                              <option value="#">A1</option>
-                              <option value="#">A2</option>
-                              <option value="#">B1</option>
-                              <option value="#">B2</option>
-                              <option value="#">C1</option>
-                              <option value="#">C2</option>
-                            </select>
-                         </td>
+                          <td>0500000</td>
+                          <td>female</td>
+                          <td>98645332</td>
+                          <td>4</td>
                           <td>
                             <div class="badge badge-outline-danger">pending</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-success">Activate</div>
+                            <div class="badge badge-outline-danger">Delete</div> 
                           </td>
                           <td>
                             <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Profile</a></div>
@@ -613,22 +586,15 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> English</td>
-                          <td> 
-                            <select name="level" id="level">
-                              <option value="#">A1</option>
-                              <option value="#">A2</option>
-                              <option value="#">B1</option>
-                              <option value="#">B2</option>
-                              <option value="#">C1</option>
-                              <option value="#">C2</option>
-                            </select>
+                          <td>0500000</td>
+                          <td>male</td>
+                          <td>98645332</td>
+                          <td>1</td>
+                          <td>
+                            <div class="badge badge-outline-success">Working</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">pending</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success">Activate</div>
+                            <div class="badge badge-outline-danger">Delete</div> 
                           </td>
                           <td>
                             <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Profile</a></div>
@@ -649,22 +615,15 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> Turkish</td>
-                          <td>
-                            <select name="level" id="level">
-                              <option value="#">A1</option>
-                              <option value="#">A2</option>
-                              <option value="#">B1</option>
-                              <option value="#">B2</option>
-                              <option value="#">C1</option>
-                              <option value="#">C2</option>
-                            </select>
-                          </td>
+                          <td>0500000</td>
+                          <td>female</td>
+                          <td>98645332</td>
+                          <td>3</td>
                           <td>
                             <div class="badge badge-outline-danger">pending</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-success">Activate</div>
+                            <div class="badge badge-outline-danger">Delete</div> 
                           </td>
                           <td>
                             <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Profile</a></div>
@@ -685,22 +644,15 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> italian</td>
-                          <td> 
-                            <select name="level" id="level">
-                              <option value="#">A1</option>
-                              <option value="#">A2</option>
-                              <option value="#">B1</option>
-                              <option value="#">B2</option>
-                              <option value="#">C1</option>
-                              <option value="#">C2</option>
-                            </select>
+                          <td>0500000</td>
+                          <td>male</td>
+                          <td>98645332</td>
+                          <td>4</td>
+                          <td>
+                            <div class="badge badge-outline-success">Working</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">pending</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success">Activate</div>
+                            <div class="badge badge-outline-danger">Delete</div> 
                           </td>
                           <td>
                             <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Profile</a></div>
@@ -722,22 +674,15 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> French</td>
-                          <td>
-                            <select name="level" id="level">
-                              <option value="#">A1</option>
-                              <option value="#">A2</option>
-                              <option value="#">B1</option>
-                              <option value="#">B2</option>
-                              <option value="#">C1</option>
-                              <option value="#">C2</option>
-                            </select>
-                          </td>
+                          <td>0500000</td>
+                          <td>female</td>
+                          <td>98645332</td>
+                          <td>2</td>
                           <td>
                             <div class="badge badge-outline-danger">pending</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-success">Activate</div>
+                            <div class="badge badge-outline-danger">Delete</div> 
                           </td>
                           <td>
                             <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Profile</a></div>

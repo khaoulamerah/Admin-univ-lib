@@ -93,35 +93,27 @@
           <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
-                <i class="mdi mdi-calendar text-success"></i>
+                <i class="fa-solid fa-graduation-cap"></i>
               </span>
               <span class="menu-title">Students</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../ui-features/New-account.html">New accounts</a></li>
+                <li class="nav-item"> <a class="nav-link" href="New-account.html">New accounts</a></li>
                 <li class="nav-item"> <a class="nav-link" href="new-enrollements.html">new enrollements</a></li>
-                <li class="nav-item"> <a class="nav-link" href="All-students.html">All studentst</a></li>
+                <li class="nav-item"> <a class="nav-link" href="All-students.html">All students</a></li>
               </ul>
             </div>
           </li>
 
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="../teachers-sapce/Teachers.html" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" href="../teachers-sapce/Teachers.html">
               <span class="menu-icon">
-                <i class="fa-solid fa-graduation-cap"></i>
+                <i class="fa-solid fa-clipboard"></i>
               </span>
               <span class="menu-title">Teachers</span>
-              <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
-              </ul>
-            </div>
           </li>
 
           <li class="nav-item menu-items">
@@ -283,8 +275,7 @@
               </ul>
             </div>
           </li>
-          <hr>
-          <button class="btn-log-out"><a href="#">Log out</a></button>
+
         </ul>
       </nav>
 
@@ -442,174 +433,279 @@
         <div class="main-panel">
           <div class="content-wrapper">
            <!------here title -->
-          <div class="row links">
-           <div class="links"><a href="#"><i class="fa-solid fa-angle-left"></i> Go back </a></div>
-           <div class="links"><a href="#">Next student <i class="fa-solid fa-angle-right"></i></a></div>
-          </div>
-            <div class="column-flex">  
-                <div class="navbar-profile">
-                  <img class="profile-img" src="../../assets/images/faces/face16.jpg" alt="">
-                  <p> Ahmed said</p>
-                </div>     
+           <div>
+            <div class="row ligne">
+              <h4 class="link-ligne-1">New accounts </h4>
+              <div class="badge badge-outline-success btn-profile">Export</div>
             </div><br>
-            <div class="row links-title">
-              <h3 class="Personnal-informations">Enrollements </h3>
-            <div>
-               <p class="links ">date of creation:20/07/2024 </p>
-               <p class="links ">date of creation:20/07/2024</p>
-            </div>
-          </div>
-   
-          <div class="col-md-6 grid-margin stretch-card ">
-            <div class="card">
-              <div class="card-body">
-                <form  method="POST">
-                 <div class="form-group row"> 
-                  <div class="col">
-                    <label class="links">Language</label>
-                    <div id="the-basics">
-                      <input class="typeahead" type="text" placeholder="Language">
-                    </div>
-                  </div>
-                  <div class="col">
-                    <label class="links">Level</label>
-                    <div id="bloodhound">
-                      <input class="typeahead" type="text" placeholder="Level">
-                    </div>
+            <div class="row ligne"> 
+              <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search form-column">
+                <input type="text" class="form-control" placeholder=" Type to search">
+                <span class="links">0 out of 235 results selected</span>
+              </form>
+             <div> 
+             <div class="badge badge-outline-danger">disable</div>
+             </div>
+              <select name="select" id="#"class="Filtre badge badge-outline-success btn-profile">
+                <option value="#">Filters</option> 
+                <option value="name">Name</option> 
+                <option value="registration">Date of registration</option> 
+                <option value="">Language and level</option> 
+              </select>
+           
+            </div><br>
+           </div>
+           <div class="row ">
+            <div class="col-12 grid-margin">
+              <div class="card">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>
+                          </th>
+                          <th>pic</th>
+                          <th> First name </th>
+                          <th> Last name </th>
+                          <th> Email</th>
+                          <th> Phone</th>
+                          <th> Gender</th>
+                          <th> Birthday</th>
+                          <th> student status </th>
+                          <th> Status </th>
+                          <th> action </th>
+                          <th> Profile </th>
+                          <th> date </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <a href="#"> 
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td> 0500000</td>
+                          <td> Female</td>
+                          <td> 13/05/2000</td>
+                          <td> local student</td>
+                          <td>
+                            <div class="badge badge-outline-success">Activate</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">disable</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td> 0500000</td>
+                          <td>male</td>
+                          <td> 13/05/2000</td>
+                          <td> foriegn student</td>
+                          <td>
+                            <div class="badge badge-outline-success">Activate</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">disable</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+                         
+                        <tr>
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td> 0500000</td>
+                          <td>male</td>
+                          <td> 13/05/2000</td>
+                          <td> foriegn student</td>
+                          <td>
+                            <div class="badge badge-outline-success">Activate</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">disable</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td> 0500000</td>
+                          <td>female</td>
+                          <td> 13/05/2000</td>
+                          <td> employee</td>
+                          <td>
+                            <div class="badge badge-outline-success">Activate</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">disable</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td> 0500000</td>
+                          <td>male</td>
+                          <td> 13/05/2000</td>
+                          <td> local student</td>
+                          <td>
+                            <div class="badge badge-outline-success">Activate</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">disable</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td> 0500000</td>
+                          <td>male</td>
+                          <td> 13/05/2000</td>
+                          <td> foriegn student</td>
+                          <td>
+                            <div class="badge badge-outline-success">Activate</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">disable</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td> 0500000</td>
+                          <td>female</td>
+                          <td> 13/05/2000</td>
+                          <td>employee</td>
+                          <td>
+                            <div class="badge badge-outline-success">Activate</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">disable</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+                       
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-
-                  <div class="form-group row"> 
-                    <div class="col">
-                      <label>Attached files</label>
-                      <div id="the-basics">
-                        <input class="typeahead" type="text" placeholder="File name.pdf">
-                      </div>
-                    </div>
-                  </div> <br>
-                  <div class="links row"> 
-                    <div class="badge badge-outline-danger">Refuse</div>
-                    <div class="badge badge-outline-success">Activate</div>
-                   </div><br>
-                   <hr>
-                   <div class="row links-title">
-                    <h3 class="Personnal-informations">Personnal informations </h3>
-                  <div>
-                     <p class="links ">date of creation:20/07/2024 </p>
-                     <p class="links ">date of creation:20/07/2024</p>
-                  </div>
-                </div>
-                <div class="col-md-6 grid-margin stretch-card ">
-                    <div class="card">
-                      <div class="card-body">
-                        <form  method="POST">
-                         <div class="form-group row"> 
-                          <div class="col">
-                            <label class="links">First name</label>
-                            <div id="the-basics">
-                              <input class="typeahead" type="text" placeholder="First name">
-                            </div>
-                          </div>
-                          <div class="col">
-                            <label class="links">Last name</label>
-                            <div id="bloodhound">
-                              <input class="typeahead" type="text" placeholder="Last name">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group row"> 
-                            <div class="col">
-                              <label class="links">Date of birth</label>
-                              <div id="the-basics">
-                                <input class="typeahead" type="text" placeholder="Date of birth">
-                              </div>
-                            </div>
-                            <div class="col">
-                              <label class="links">Gender</label>
-                              <div id="bloodhound">
-                                <input class="typeahead" type="text" placeholder="Gender">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group row"> 
-                            <div class="col">
-                              <label class="links ">Adress</label>
-                              <div id="the-basics">
-                                <input class="typeahead" type="text" placeholder="Adress">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group row"> 
-                            <div class="col">
-                              <label class="links ">Phone</label>
-                              <div id="the-basics">
-                                <input class="typeahead" type="text" placeholder="Phone number">
-                              </div>
-                            </div>
-                            <div class="col">
-                              <label class="links">Id</label>
-                              <div id="bloodhound">
-                                <input class="typeahead" type="text" placeholder="ID">
-                              </div>
-                            </div>
-                          </div>
-        
-                          <div class="form-group row"> 
-                            <div class="col">
-                              <label class="links">Email</label>
-                              <div id="the-basics">
-                                <input class="typeahead" type="text" placeholder=" Email adress">
-                              </div>
-                            </div>
-                          </div>
-        
-                          <div class="form-group row"> 
-                            <div class="col">
-                              <label class="links">Status</label>
-                              <div id="the-basics">
-                                <input class="typeahead" type="text" placeholder="Status">
-                              </div>
-                            </div>
-                            <div class="col">
-                              <label class="links">Nationality</label>
-                              <div id="bloodhound">
-                                <input class="typeahead" type="text" placeholder="Nationality">
-                              </div>
-                            </div>
-                          </div> <br>
-                          <div class="form-group row"> 
-                            <div class="col">
-                              <label>Attached files</label>
-                              <div id="the-basics">
-                                <input class="typeahead" type="text" placeholder="File name.pdf">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group row"> 
-                            <div class="col">
-                              <div id="the-basics">
-                                <input class="typeahead" type="text" placeholder="File name.pdf">
-                              </div>
-                            </div>
-                          </div><br>
-                           <div class="links row"> 
-                           <div class="badge badge-outline-danger">Refuse</div>
-                           <div class="badge badge-outline-success">Activate</div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-
-                </form>
               </div>
             </div>
+          </div>
+          <div class="row links">
+           <div class="links"><a href="#"><i class="fa-solid fa-angle-left"></i> Go back </a></div>
+           <div class="links">1 out of 25 pages </div>
+           <div class="links"><a href="#"> See more<i class="fa-solid fa-angle-right"></i></a></div>
           </div>
 
           </div>
           <!-- content-wrapper ends -->
            <!-- partial:partials/_footer.html -->
-          <footer class="footer">
+       <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
               <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Developped by TechGeeks Guelma</span>
               <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © Version</span>

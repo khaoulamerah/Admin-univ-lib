@@ -93,35 +93,27 @@
           <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
-                <i class="mdi mdi-calendar text-success"></i>
+                <i class="fa-solid fa-graduation-cap"></i>
               </span>
               <span class="menu-title">Students</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="New-account.html">New accounts</a></li>
-                <li class="nav-item"> <a class="nav-link" href="new-enrollements.html">new enrollements</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../ui-features/New-accounts.html">New accounts</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../ui-features/new-enrollements.html">new enrollements</a></li>
                 <li class="nav-item"> <a class="nav-link" href="All-students.html">All students</a></li>
               </ul>
             </div>
           </li>
 
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="../teachers-sapce/Teachers.html" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" href="../teachers-sapce/Teachers.html">
               <span class="menu-icon">
-                <i class="fa-solid fa-graduation-cap"></i>
+                <i class="fa-solid fa-clipboard"></i>
               </span>
               <span class="menu-title">Teachers</span>
-              <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
-              </ul>
-            </div>
           </li>
 
           <li class="nav-item menu-items">
@@ -443,7 +435,7 @@
            <!------here title -->
            <div>
             <div class="row ligne">
-              <h4 class="link-ligne-1">New accounts </h4>
+              <h4 class="link-ligne-1">New enrollements</h4>
               <div class="badge badge-outline-success btn-profile">Export</div>
             </div><br>
             <div class="row ligne"> 
@@ -452,7 +444,8 @@
                 <span class="links">0 out of 235 results selected</span>
               </form>
              <div> 
-             <div class="badge badge-outline-danger">disable</div>
+              <div class="badge badge-outline-success"> Activate</div>
+             <div class="badge badge-outline-danger">Refuse</div>
              </div>
               <select name="select" id="#"class="Filtre badge badge-outline-success btn-profile">
                 <option value="#">Filters</option> 
@@ -477,13 +470,11 @@
                           <th> First name </th>
                           <th> Last name </th>
                           <th> Email</th>
-                          <th> Phone</th>
-                          <th> Gender</th>
-                          <th> Birthday</th>
-                          <th> student status </th>
+                          <th> Language </th>
+                          <th> Level</th>
                           <th> Status </th>
                           <th> action </th>
-                          <th> Profile </th>
+                          <th> enrollements </th>
                           <th> date </th>
                         </tr>
                       </thead>
@@ -503,18 +494,25 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> 0500000</td>
-                          <td> Female</td>
-                          <td> 13/05/2000</td>
-                          <td> local student</td>
+                          <td> French</td>
+                          <td>
+                           <select name="level" id="level">
+                            <option value="#">A1</option>
+                            <option value="#">A2</option>
+                            <option value="#">B1</option>
+                            <option value="#">B2</option>
+                            <option value="#">C1</option>
+                            <option value="#">C2</option>
+                          </select>
+                        </td>
+                          <td>
+                            <div class="badge badge-outline-danger">pending</div>
+                          </td>
                           <td>
                             <div class="badge badge-outline-success">Activate</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">disable</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -533,18 +531,25 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> 0500000</td>
-                          <td>male</td>
-                          <td> 13/05/2000</td>
-                          <td> foriegn student</td>
+                          <td> English</td>
+                          <td> 
+                            <select name="level" id="level">
+                              <option value="#">A1</option>
+                              <option value="#">A2</option>
+                              <option value="#">B1</option>
+                              <option value="#">B2</option>
+                              <option value="#">C1</option>
+                              <option value="#">C2</option>
+                            </select>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">pending</div>
+                          </td>
                           <td>
                             <div class="badge badge-outline-success">Activate</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">disable</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -563,18 +568,25 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> 0500000</td>
-                          <td>male</td>
-                          <td> 13/05/2000</td>
-                          <td> foriegn student</td>
+                          <td> English</td>
+                          <td> 
+                            <select name="level" id="level">
+                              <option value="#">A1</option>
+                              <option value="#">A2</option>
+                              <option value="#">B1</option>
+                              <option value="#">B2</option>
+                              <option value="#">C1</option>
+                              <option value="#">C2</option>
+                            </select>
+                         </td>
+                          <td>
+                            <div class="badge badge-outline-danger">pending</div>
+                          </td>
                           <td>
                             <div class="badge badge-outline-success">Activate</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">disable</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -593,18 +605,25 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> 0500000</td>
-                          <td>female</td>
-                          <td> 13/05/2000</td>
-                          <td> employee</td>
+                          <td> English</td>
+                          <td> 
+                            <select name="level" id="level">
+                              <option value="#">A1</option>
+                              <option value="#">A2</option>
+                              <option value="#">B1</option>
+                              <option value="#">B2</option>
+                              <option value="#">C1</option>
+                              <option value="#">C2</option>
+                            </select>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">pending</div>
+                          </td>
                           <td>
                             <div class="badge badge-outline-success">Activate</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">disable</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -622,18 +641,25 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> 0500000</td>
-                          <td>male</td>
-                          <td> 13/05/2000</td>
-                          <td> local student</td>
+                          <td> Turkish</td>
+                          <td>
+                            <select name="level" id="level">
+                              <option value="#">A1</option>
+                              <option value="#">A2</option>
+                              <option value="#">B1</option>
+                              <option value="#">B2</option>
+                              <option value="#">C1</option>
+                              <option value="#">C2</option>
+                            </select>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">pending</div>
+                          </td>
                           <td>
                             <div class="badge badge-outline-success">Activate</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">disable</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -651,18 +677,25 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> 0500000</td>
-                          <td>male</td>
-                          <td> 13/05/2000</td>
-                          <td> foriegn student</td>
+                          <td> italian</td>
+                          <td> 
+                            <select name="level" id="level">
+                              <option value="#">A1</option>
+                              <option value="#">A2</option>
+                              <option value="#">B1</option>
+                              <option value="#">B2</option>
+                              <option value="#">C1</option>
+                              <option value="#">C2</option>
+                            </select>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">pending</div>
+                          </td>
                           <td>
                             <div class="badge badge-outline-success">Activate</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">disable</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -681,18 +714,25 @@
                           <td><span class="pl-2">Henry</span></td>
                           <td> Klein</td>
                           <td> test@gmail.com </td>
-                          <td> 0500000</td>
-                          <td>female</td>
-                          <td> 13/05/2000</td>
-                          <td>employee</td>
+                          <td> French</td>
+                          <td>
+                            <select name="level" id="level">
+                              <option value="#">A1</option>
+                              <option value="#">A2</option>
+                              <option value="#">B1</option>
+                              <option value="#">B2</option>
+                              <option value="#">C1</option>
+                              <option value="#">C2</option>
+                            </select>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">pending</div>
+                          </td>
                           <td>
                             <div class="badge badge-outline-success">Activate</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">disable</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-all-students.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-enrollements.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -704,6 +744,7 @@
               </div>
             </div>
           </div>
+          
           <div class="row links">
            <div class="links"><a href="#"><i class="fa-solid fa-angle-left"></i> Go back </a></div>
            <div class="links">1 out of 25 pages </div>
@@ -713,7 +754,7 @@
           </div>
           <!-- content-wrapper ends -->
            <!-- partial:partials/_footer.html -->
-       <footer class="footer">
+          <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
               <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Developped by TechGeeks Guelma</span>
               <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © Version</span>
