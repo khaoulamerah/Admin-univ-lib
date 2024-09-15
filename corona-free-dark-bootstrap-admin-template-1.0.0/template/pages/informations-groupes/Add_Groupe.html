@@ -114,7 +114,7 @@
               <span class="menu-title">Teachers</span>
             </a>
           </li>
-
+         
           <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
@@ -433,152 +433,64 @@
         <div class="main-panel">
           <div class="content-wrapper">
            <!------here title -->
-          <div class="row links">
-           <div class="links"><a href="#"><i class="fa-solid fa-angle-left"></i> Go back </a></div>
-           <div class="links"><a href="#">Next language <i class="fa-solid fa-angle-right"></i></a></div>
-          </div><br>
-   
+           <div class="row links">
+            <div class="links"><a href="#"><i class="fa-solid fa-angle-left"></i> Go back </a></div>
+            <div class="links"><a href="#">Next language <i class="fa-solid fa-angle-right"></i></a></div>
+           </div><br>
           <div class="col-md-6 grid-margin stretch-card ">
             <div class="card">
               <div class="card-body">
                 <div class="row links-title">
-                  <h3 class="Personnal-informations">Informations </h3>
-                <div>
-                   <p class="links">date of creation:20/07/2024 </p>
-                   <p class="links">Last modification:21/07/2024</p>
-                </div>
-              </div><br>
+                    <h3 class="Personnal-informations"> Informations </h3>
+                </div><br>
+         
                 <form  method="POST">
+                <div class="form-group row"> 
+                    <div class="col">
+                      <label class="links "> Course</label>
+                      <div id="the-basics">
+                       <select name="course" id="course" class="typeahead">
+                        <option value="#">Select course </option>
+                        <option value="#">--</option>
+                        <option value="#">--</option>
+                       </select>
+                      </div>
+                    </div>
+                  </div>
                  <div class="form-group row"> 
                   <div class="col">
-                    <label class="links">Name</label>
+                    <label class="links">Teacher</label>
                     <div id="the-basics">
-                      <input class="typeahead" type="text" placeholder="Enter information">
+                      <select name="#" id="#" class="typeahead">
+                        <option value="#"> Groupe 01 </option>
+                        <option value="#"> Groupe 01</option>
+                        <option value="#">--</option>
+                      </select> 
+                      <div class="row"> 
+                      <label for="#" class="links margin-left">optional</label>
+                    </div>
                     </div>
                   </div>
-                  <div class="col"></div>
-                </div>
-                <div class="form-group row"> 
-                    <div class="col">
-                      <label class="links">Year</label>
-                      <div id="the-basics">
-                        <input class="typeahead" type="text" placeholder="Enter information">
-                      </div>
-                    </div>
-                    <div class="col">
-                      <label class="links">Semester</label>
-                      <div id="bloodhound">
-                        <input class="typeahead" type="text" placeholder="Enter information">
-                      </div>
+                  <div class="col">
+                    <label class="links">Max student</label>
+                    <div id="bloodhound">
+                      <input class="typeahead" type="text" placeholder="Enter a number">
                     </div>
                   </div>
-                  <div class="form-group row"> 
-                    <div class="col">
-                      <label class="links ">Picture</label>
-                      <div id="the-basics">
-                        <input class="typeahead" type="text" placeholder="Drop a picture">
-                      </div>
-                    </div>
-                  </div><br>
-                  <hr>
-                  <div class="row links-title">
-                    <h3 class="Personnal-informations">Courses</h3>
-                  <div>
-                    <div class="badge badge-outline-success btn-profile"><a href="#">Asign new course</a></div>
+                </div><br>
+                   <div>
+                    <br>
+                   </div><br>
+                   <div class="links row"> 
+                   <div class="badge badge-outline-danger">go back</div>
+                   <div class="badge badge-outline-success">create</div>
                   </div>
-                </div>
-                <div class="form-group row"> 
-                    <div class="col">
-                      <label class="links">Total number of groups</label>
-                      <div id="the-basics">
-                        <input class="typeahead" type="text" placeholder="Total number of groups">
-                      </div>
-                    </div>
-                    <div class="col">
-                      <label class="links">current groups</label>
-                      <div id="bloodhound">
-                        <input class="typeahead" type="text" placeholder="current groups">
-                      </div>
-                    </div>
-                  </div><br> 
-                  
-                  
-                  <div class="row links-title">
-                    <h3 class="Personnal-informations"></h3>
-                  <div>
-                     <p class="links">date of creation:20/07/2024 </p>
-                     <p class="links">Last modification:21/07/2024</p>
-                  </div>
-                </div>   
-                  <div class="form-group row"> 
-                    <div class="col">
-                      <label class="links">Course</label>
-                      <div id="the-basics">
-                        <input class="typeahead" type="text" placeholder="Course"> 
-                      </div>
-                    </div>
-                    <div class="col">
-                      <label class="links">Groupes</label>
-                      <div id="bloodhound">
-                        <input class="typeahead" type="text" placeholder="Groupe">
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="row links-title">
-                    <h3 class="Personnal-informations"></h3>
-                  <div>
-                     <p class="links">date of creation:20/07/2024 </p>
-                     <p class="links">Last modification:21/07/2024</p>
-                  </div>
-                </div>
-                  <div class="form-group row"> 
-                    <div class="col">
-                      <label class="links">Course</label>
-                      <div id="the-basics">
-                        <input class="typeahead" type="text" placeholder="Course">
-                      </div>
-                    </div>
-                    <div class="col">
-                      <label class="links">Groupes</label>
-                      <div id="bloodhound">
-                        <input class="typeahead" type="text" placeholder="Groupe"><br>
-                        <input class="typeahead" type="text" placeholder="Groupe">
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="row links-title">
-                    <h3 class="Personnal-informations"></h3>
-                  <div>
-                     <p class="links">date of creation:20/07/2024 </p>
-                     <p class="links">Last modification:21/07/2024</p>
-                  </div>
-                </div>
-                  <div class="form-group row"> 
-                    <div class="col">
-                      <label class="links">Course</label>
-                      <div id="the-basics">
-                        <input class="typeahead" type="text" placeholder="Course">
-                      </div>
-                    </div>
-                    <div class="col">
-                      <label class="links">Groupes</label>
-                      <div id="bloodhound">
-                        <input class="typeahead" type="text" placeholder="Groupe">
-                      </div>
-                    </div>
-                  </div>
-                </form><br>
-
-                <div class="badge badge-outline-danger size-btn margin-left">Delete language</div>
+                </form>
               </div>
             </div>
           </div>
+
           </div>
-          
           <!-- content-wrapper ends -->
            <!-- partial:partials/_footer.html -->
           <footer class="footer">
