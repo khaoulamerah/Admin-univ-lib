@@ -7606,6 +7606,9 @@ figure {
   margin-top: 1.3rem;
   height: 6vh;
 }
+.margin-left{
+  margin-left: 20rem;
+}
 img {
   vertical-align: middle;
   border-style: none; }
@@ -15648,6 +15651,7 @@ p {
   justify-content: center;
   margin-left: 24rem;
 }
+
 .display-1 {
   font-size: 3.75rem; }
   @media (max-width: 991px) {
