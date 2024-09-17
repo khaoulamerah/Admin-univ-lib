@@ -100,15 +100,15 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../student-space/New-account.html">New accounts</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../student-space/new-enrollements.html">new enrollements</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../student-space/All-students.html">All students</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../ui-features/New-accounts.html">New accounts</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../ui-features/new-enrollements.html">new enrollements</a></li>
+                <li class="nav-item"> <a class="nav-link" href="All-students.html">All students</a></li>
               </ul>
             </div>
           </li>
 
           <li class="nav-item menu-items">
-            <a class="nav-link" href="Teachers.html">
+            <a class="nav-link" href="../teachers-sapce/Teachers.html">
               <span class="menu-icon">
                 <i class="fa-solid fa-clipboard"></i>
               </span>
@@ -224,7 +224,7 @@
             <span class="nav-link">Website</span>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="../Announces/Announces.html" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
                 <i class="fa-solid fa-globe"></i>
               </span>
@@ -240,13 +240,6 @@
               <span class="menu-title">Messages</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
-              </ul>
-            </div>
           </li>
           
           <li class="nav-item nav-category">
@@ -428,7 +421,7 @@
            <!------here title -->
            <div>
             <div class="row ligne">
-              <h4 class="link-ligne-1">Teachers</h4>
+              <h4 class="link-ligne-1">Announcements</h4>
               <div class="badge badge-outline-success btn-profile">Export</div>
             </div><br>
             <div class="row ligne"> 
@@ -437,8 +430,8 @@
                 <span class="links">0 out of 235 results selected</span>
               </form>
              <div> 
-              <div class="badge badge-outline-success btn-profile">Add new teachers</div>
-             <div class="badge badge-outline-danger">Delete</div>
+            <div class="badge badge-outline-success btn-profile">New announcements</div>
+             <div class="badge badge-outline-danger">Delete </div>
              </div>
               <select name="select" id="#"class="Filtre badge badge-outline-success btn-profile">
                 <option value="#">Filters</option> 
@@ -460,16 +453,11 @@
                           <th>
                           </th>
                           <th>pic</th>
-                          <th> First name </th>
-                          <th> Last name </th>
-                          <th> Email</th>
-                          <th> Phone </th>
-                          <th> Gender</th>
-                          <th> id </th>
-                          <th> Groupe</th>
-                          <th> Status </th>
+                          <th> User</th>
+                          <th> Title</th>
+                          <th> Content </th>
                           <th> action </th>
-                          <th> Profile</th>
+                          <th> informations </th>
                           <th> date </th>
                         </tr>
                       </thead>
@@ -486,21 +474,14 @@
                           <td>
                             <img src="../../assets/images/faces/face1.jpg" alt="image" />
                           </td>
-                          <td><span class="pl-2">Henry</span></td>
-                          <td> Klein</td>
-                          <td> test@gmail.com </td>
-                          <td>0500000</td>
-                          <td>male</td>
-                          <td>98645332</td>
-                          <td>2</td>
+                          <td><span class="pl-2">admin name</span></td>
+                          <td> exam got rescheduled </td>
+                          <td> exam got rescheduled exam got rescheduled</td>
                           <td>
-                            <div class="badge badge-outline-success">Working</div>
+                            <div class="badge badge-outline-danger">Delete</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="check_announcement.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -516,21 +497,14 @@
                           <td>
                             <img src="../../assets/images/faces/face1.jpg" alt="image" />
                           </td>
-                          <td><span class="pl-2">Henry</span></td>
-                          <td> Klein</td>
-                          <td> test@gmail.com </td>
-                          <td>0500000</td>
-                          <td>male</td>
-                          <td>98645332</td>
-                          <td>2</td>
+                          <td><span class="pl-2">admin name</span></td>
+                          <td>exam got rescheduled </td>
+                          <td>exam got rescheduled exam got rescheduled</td>
                           <td>
-                            <div class="badge badge-outline-danger">pending</div>
+                            <div class="badge badge-outline-danger">Delete</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="check_announcement.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -546,21 +520,14 @@
                           <td>
                             <img src="../../assets/images/faces/face1.jpg" alt="image" />
                           </td>
-                          <td><span class="pl-2">Henry</span></td>
-                          <td> Klein</td>
-                          <td> test@gmail.com </td>
-                          <td>0500000</td>
-                          <td>female</td>
-                          <td>98645332</td>
-                          <td>4</td>
+                          <td><span class="pl-2">admin name</span></td>
+                          <td> exam got rescheduled</td>
+                          <td>exam got rescheduled exam got rescheduled</td>
                           <td>
-                            <div class="badge badge-outline-danger">pending</div>
+                            <div class="badge badge-outline-danger">Delete</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="check_announcement.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -576,21 +543,14 @@
                           <td>
                             <img src="../../assets/images/faces/face1.jpg" alt="image" />
                           </td>
-                          <td><span class="pl-2">Henry</span></td>
-                          <td> Klein</td>
-                          <td> test@gmail.com </td>
-                          <td>0500000</td>
-                          <td>male</td>
-                          <td>98645332</td>
-                          <td>1</td>
+                          <td><span class="pl-2">admin name</span></td>
+                          <td> exam got rescheduled</td>
+                          <td>exam got rescheduled exam got rescheduled</td>
                           <td>
-                            <div class="badge badge-outline-success">Working</div>
+                            <div class="badge badge-outline-danger">Delete</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="check_announcement.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -605,21 +565,14 @@
                           <td>
                             <img src="../../assets/images/faces/face1.jpg" alt="image" />
                           </td>
-                          <td><span class="pl-2">Henry</span></td>
-                          <td> Klein</td>
-                          <td> test@gmail.com </td>
-                          <td>0500000</td>
-                          <td>female</td>
-                          <td>98645332</td>
-                          <td>3</td>
+                          <td><span class="pl-2">admin name</span></td>
+                          <td> exam got rescheduled </td>
+                          <td>exam got rescheduled exam got rescheduled</td>
                           <td>
-                            <div class="badge badge-outline-danger">pending</div>
+                            <div class="badge badge-outline-danger">Delete</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="check_announcement.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -634,21 +587,14 @@
                           <td>
                             <img src="../../assets/images/faces/face1.jpg" alt="image" />
                           </td>
-                          <td><span class="pl-2">Henry</span></td>
-                          <td> Klein</td>
-                          <td> test@gmail.com </td>
-                          <td>0500000</td>
-                          <td>male</td>
-                          <td>98645332</td>
-                          <td>4</td>
+                          <td><span class="pl-2">admin name</span></td>
+                          <td> exam got rescheduled </td>
+                          <td>exam got rescheduled exam got rescheduled</td>
                           <td>
-                            <div class="badge badge-outline-success">Working</div>
+                            <div class="badge badge-outline-danger">Delete</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="check_announcement.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>
@@ -664,21 +610,14 @@
                           <td>
                             <img src="../../assets/images/faces/face1.jpg" alt="image" />
                           </td>
-                          <td><span class="pl-2">Henry</span></td>
-                          <td> Klein</td>
-                          <td> test@gmail.com </td>
-                          <td>0500000</td>
-                          <td>female</td>
-                          <td>98645332</td>
-                          <td>2</td>
+                          <td><span class="pl-2">admin name</span></td>
+                          <td> exam got rescheduled </td>
+                          <td> exam got rescheduled exam got rescheduled</td>
                           <td>
-                            <div class="badge badge-outline-danger">pending</div>
+                            <div class="badge badge-outline-danger">Delete</div>
                           </td>
                           <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                            <div class="badge badge-outline-success btn-profile"><a href="check_announcement.html">Check</a></div>
                           </td>
                           <td>24/07/2024</td>
                         </tr>

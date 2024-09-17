@@ -8632,6 +8632,10 @@ pre {
   background-color:#363643;
   color:#7C7C8E;
 }
+.Check{
+  margin-top: 1.5rem;
+  height: 6vh;
+}
 .table-primary th,
 .table-primary td,
 .table-primary thead th,
