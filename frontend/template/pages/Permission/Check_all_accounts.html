@@ -100,13 +100,12 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../student-space/New-account.html">New accounts</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../student-space/new-enrollements.html">new enrollements</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../student-space/All-students.html">All students</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../ui-features/New-account.html">New accounts</a></li>
+                <li class="nav-item"> <a class="nav-link" href="new-enrollements.html">new enrollements</a></li>
+                <li class="nav-item"> <a class="nav-link" href="All-students.html">All studentst</a></li>
               </ul>
             </div>
           </li>
-
           <li class="nav-item menu-items">
             <a class="nav-link" href="../teachers-sapce/Teachers.html">
               <span class="menu-icon">
@@ -157,11 +156,11 @@
             <span class="nav-link">Accountant space</span>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="../Paiement/paiement.html">
+            <a class="nav-link" href="pages/forms/basic_elements.html">
               <span class="menu-icon">
                 <i class="mdi mdi-calendar text-success"></i>
               </span>
-              <span class="menu-title">Paiement</span>
+              <span class="menu-title">Students lists</span>
             </a>
           </li>
 
@@ -179,9 +178,9 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../Permission/all_accounts.html">all accounts</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../Permission/all_permissions.html">all permissions</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../Permission/permission_groups.html">permissions groups</a></li>
+                <li class="nav-item"> <a class="nav-link" href="all_accounts.html">all accounts</a></li>
+                <li class="nav-item"> <a class="nav-link" href="all_permissions.html">all permissions</a></li>
+                <li class="nav-item"> <a class="nav-link" href="permission_groups.html">permissions groups</a></li>
               </ul>
             </div>
           </li>
@@ -235,8 +234,9 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../Messages/Recevoir.html">Recedvoir</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../Messages/Sent.html">Sent</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
               </ul>
             </div>
           </li>
@@ -260,7 +260,8 @@
               </ul>
             </div>
           </li>
-
+          <hr>
+          <button class="btn-log-out"><a href="#">Log out</a></button>
         </ul>
       </nav>
 
@@ -418,240 +419,191 @@
         <div class="main-panel">
           <div class="content-wrapper">
            <!------here title -->
-           <div>
-            <div class="row ligne">
-              <h4 class="link-ligne-1">Groups</h4>
-              <div class="badge badge-outline-success btn-profile">Export</div>
-            </div><br>
-            <div class="row ligne"> 
-              <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search form-column">
-                <input type="text" class="form-control" placeholder=" Type to search">
-                <span class="links">0 out of 235 results selected</span>
-              </form>
-             <div> 
-              <div class="badge badge-outline-success btn-profile">Add new group</div>
-             <div class="badge badge-outline-danger">Delete</div>
-             </div>
-              <select name="select" id="#"class="Filtre badge badge-outline-success btn-profile">
-                <option value="#">Filters</option> 
-                <option value="name">Name</option> 
-                <option value="registration">Date of registration</option> 
-                <option value="">Language and level</option> 
-              </select>
-           
-            </div><br>
-           </div>
-           <div class="row ">
-            <div class="col-12 grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th>
-                          </th>
-                          <th>Groupe</th>
-                          <th>Formation</th>
-                          <th> Students</th>
-                          <th> Max</th>
-                          <th> Teachers</th>
-                          <th> status </th>
-                          <th>action</th>
-                          <th> informations</th>
-                          <th> date</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <a href="#"> 
-                          <td>
-                            <div class="form-check form-check-muted m-0">
-                              <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input">
-                              </label>
-                            </div>
-                          </td>
-                          <td><span class="pl-2">Group 01</span></td>
-                          <td>Francais -  2024/2025 semetre 1 - C1 level</td>
-                          <td>28</td>
-                          <td>30</td>
-                          <td>Mrs name</td>
-                          <td>
-                            <div class="badge badge-outline-success">actif</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="Check_Groupe.html">Check</a></div>
-                          </td>
-                          <td>24/07/2024</td>
-                        </tr>
+          <div class="row links">
+           <div class="links"><a href="#"><i class="fa-solid fa-angle-left"></i> Go back </a></div>
+           <div class="links"><a href="#">Next user <i class="fa-solid fa-angle-right"></i></a></div>
+          </div>
+            <div class="column-flex">  
+                <div class="navbar-profile">
+                  <img class="profile-img" src="../../assets/images/faces/face16.jpg" alt="">
+                  <p> Ahmed said</p>
+                </div> 
+            <div class="row"> 
+              <div class="checkbox-apple">
+                <input class="yep" id="check-apple" type="checkbox">
+                <label for="check-apple"></label>
+              </div>
+              <div class="col"> 
+              <label for="#" style="font-family: Arial, Helvetica, sans-serif;"> is admin</label>
+            </div>
+          </div> <br>
 
-                        <tr>
-                          <td>
-                            <div class="form-check form-check-muted m-0">
-                              <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input">
-                              </label>
-                            </div>
-                          </td>
-                          <td><span class="pl-2">Group 03</span></td>
-                          <td>Francais -  2024/2025 semetre 1 - C1 level</td>
-                          <td> 31</td>
-                          <td>30</td>
-                          <td>Mrs name</td>
-                          <td>
-                            <div class="badge badge-outline-success">actif</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="Check_Groupe.html">Check</a></div>
-                          </td>
-                          <td>24/07/2024</td>
-                        </tr>
-                         
-                        <tr>
-                          <td>
-                            <div class="form-check form-check-muted m-0">
-                              <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input">
-                              </label>
-                            </div>
-                          </td>
-                          <td><span class="pl-2">Group 01</span></td>
-                          <td>Francais -  2024/2025 semetre 1 - C1 level</td>
-                          <td>24</td>
-                          <td>30</td>
-                          <td>Mrs name</td>
-                          <td>
-                            <div class="badge badge-outline-success">actif</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="Check_Groupe.html">Check</a></div>
-                          </td>
-                          <td>24/07/2024</td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <div class="form-check form-check-muted m-0">
-                              <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input">
-                              </label>
-                            </div>
-                          </td>
-                          <td><span class="pl-2">Group 02</span></td>
-                          <td>Francais -  2024/2025 semetre 1 - C1 level</td>
-                          <td>19</td>
-                          <td>30</td>
-                          <td>--</td>
-                          <td>
-                            <div class="badge badge-outline-success">actif</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="Check_Groupe.html">Check</a></div>
-                          </td>
-                          <td>24/07/2024</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="form-check form-check-muted m-0">
-                              <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input">
-                              </label>
-                            </div>
-                          </td>
-                          <td><span class="pl-2">Group 03</span></td>
-                          <td>Francais -  2024/2025 semetre 1 - C1 level</td>
-                          <td>26</td>
-                          <td>30</td>
-                          <td>Mrs name</td>
-                          <td>
-                            <div class="badge badge-outline-success">actif</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="Check_Groupe.html">Check</a></div>
-                          </td>
-                          <td>24/07/2024</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="form-check form-check-muted m-0">
-                              <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input">
-                              </label>
-                            </div>
-                          </td>
-                          <td><span class="pl-2">Group 01</span></td>
-                          <td>Francais -  2024/2025 semetre 1 - C1 level</td>
-                          <td>30</td>
-                          <td>30</td>
-                          <td>--</td>
-                          <td>
-                            <div class="badge badge-outline-success">actif</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="Check_Groupe.html">Check</a></div>
-                          </td>
-                          <td>24/07/2024</td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <div class="form-check form-check-muted m-0">
-                              <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input">
-                              </label>
-                            </div>
-                          </td>
-                          <td><span class="pl-2">Group 03</span></td>
-                          <td>Francais -  2024/2025 semetre 1 - C1 level</td>
-                          <td>11</td>
-                          <td>30</td>
-                          <td>Mrs name</td>
-                          <td>
-                            <div class="badge badge-outline-success">actif</div>
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-danger">Delete</div> 
-                          </td>
-                          <td>
-                            <div class="badge badge-outline-success btn-profile"><a href="Check_Groupe.html">Check</a></div>
-                          </td>
-                          <td>24/07/2024</td>
-                        </tr>
-                       
-                      </tbody>
-                    </table>
-                  </div>
+            <div class="badge-outline-danger margin-right " style="background-color: #191c24;">
+              <div class="row margin-left-l">
+                <div class="checkbox-con">
+                  <input id="checkbox" type="checkbox">
                 </div>
+              <div class="col"> 
+              <label for="#" style="color:aliceblue;font-family: Arial, Helvetica, sans-serif;"> is super admin</label>
+            </div>
+            </div>
+            <p style="padding: 0.7rem;"> By granting this user super admin rights,you will give them full control over all possible operations on the website</p>
+            </div> <br>
+          
+            </div><br>
+   
+          <div class="col-md-6 grid-margin stretch-card ">
+            <div class="card">
+              <div class="card-body">
+                <div class="row links-title">
+                  <h3 class="Personnal-informations">Personnal informations </h3>
+                <div>
+                   <p class="links">date of creation:20/07/2024 </p>
+                   <p class="links">Last modification:21/07/2024</p>
+                </div>
+              </div><br>
+                <form  method="POST">
+                 <div class="form-group row"> 
+                  <div class="col">
+                    <label class="links">email</label>
+                    <div id="the-basics">
+                      <input class="typeahead" type="text" placeholder="email">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <label class="links">account type</label>
+                    <div id="bloodhound">
+                      <input class="typeahead" type="text" placeholder="account type">
+                    </div>
+                  </div>
+                </div><br>
+
+
+                  <div class="form-group row"> 
+                    <div class="col">
+                      <div id="the-basics"> </div>
+                    </div>
+                    <div class="col">
+                      
+                      <div id="bloodhound">
+                        <div class="badge badge-outline-success btn-profile margin-left"><a href="#">Check account </a></div>
+                      </div>
+                    </div>
+                  </div><br>
+                  <hr><br>
+                  <div class="row links-title">
+                    <h3 class="Personnal-informations"> Groups</h3>
+                  <div>
+                     <h3 class="Personnal-informations "> All Permissions </h3>
+                  </div>
+                </div><br>
+                <div class="form-group row"> 
+                    <div class="col">
+                      <label class="links">Total number of groups</label>
+                      <div id="the-basics">
+                        <input class="typeahead" type="text" placeholder="Total number of groups">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <label class="links">current groups</label>
+                      <div id="bloodhound">
+                        <input class="typeahead" type="text" placeholder="current groups">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group row"> 
+                    <div class="col">
+                      <div id="the-basics">    
+                        <div class="badge badge-outline-success btn-profile "><a href="#">assign new group </a></div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div id="bloodhound">     
+                        <div class="badge badge-outline-success btn-profile margin-left"><a href="#"> assign new perm</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group row"> 
+                    <div class="col">
+                      <label class="links">Group</label>
+                      <div id="the-basics">
+                        <input class="typeahead" type="text" placeholder="teacher">
+                      </div>           
+                    </div>             
+                    <div class="badge badge-outline-success btn-profile Check"><a href="#">Check</a></div>
+
+                    <div class="col">
+                      <label class="links">permissions</label>
+                      <div id="bloodhound">
+                        <input class="typeahead" type="text" placeholder="see teacher’s space">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group row"> 
+                    <div class="col">
+                      <div id="the-basics"> </div>
+                    </div>
+                    <div class="col">
+                      <div id="bloodhound">
+                        <input class="typeahead" type="text" placeholder="see teacher’s space">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group row"> 
+                    <div class="col">
+                      <div id="the-basics"> </div>
+                    </div>
+                    <div class="col">
+                      <div id="bloodhound">
+                        <input class="typeahead" type="text" placeholder="see teacher’s space">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group row"> 
+                    <div class="col">
+                      <div id="the-basics"> </div>
+                    </div>
+                    <div class="col">
+                      <div id="bloodhound">
+                        <input class="typeahead" type="text" placeholder="see teacher’s space">
+                      </div>
+                    </div>
+                    <div class="badge badge-outline-danger">Delete</div> 
+                  </div>
+                  <div class="form-group row"> 
+                    <div class="col">
+                      <div id="the-basics"> </div>
+                    </div>
+                    <div class="col">
+                      <div id="bloodhound">
+                        <input class="typeahead" type="text" placeholder="see teacher’s space">
+                      </div>
+                    </div>
+                    <div class="badge badge-outline-danger">Delete</div>
+                  </div>
+                  <div class="form-group row"> 
+                    <div class="col">
+                      <div id="the-basics"> </div>
+                    </div>
+                    <div class="col">
+                      <div id="bloodhound">
+                        <input class="typeahead" type="text" placeholder="see teacher’s space">
+                      </div>
+                    </div>
+                    <div class="badge badge-outline-danger">Delete</div>
+                  </div>
+
+                <br></form><br>
               </div>
             </div>
           </div>
+          </div>
           
-          <div class="row links">
-           <div class="links"><a href="#"><i class="fa-solid fa-angle-left"></i> Go back </a></div>
-           <div class="links">1 out of 25 pages </div>
-           <div class="links"><a href="#"> See more<i class="fa-solid fa-angle-right"></i></a></div>
-          </div>
-
-          </div>
           <!-- content-wrapper ends -->
            <!-- partial:partials/_footer.html -->
           <footer class="footer">

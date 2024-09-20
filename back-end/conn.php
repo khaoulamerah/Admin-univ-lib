@@ -1,6 +1,9 @@
 <?php
  require 'rb.php';
  R::setup(); 
+ R::freeze( TRUE );
+ R::setup( 'mysql:host=localhost;dbname=mydatabase',
+ 'user', 'password' ); //for both mysql or mariaDB
 
  $opts = getopt( '', [ 'add:', 'list' ] );
   if ( isset( $opts['add'] ) ) {
