@@ -437,17 +437,17 @@
               <label for="#" style="font-family: Arial, Helvetica, sans-serif;"> is admin</label>
             </div>
           </div> <br>
-
+            <i class="fa-solid fa-triangle-exclamation icon-exclamation"></i>
             <div class="badge-outline-danger margin-right " style="background-color: #191c24;">
               <div class="row margin-left-l">
                 <div class="checkbox-con">
                   <input id="checkbox" type="checkbox">
                 </div>
               <div class="col"> 
-              <label for="#" style="color:aliceblue;font-family: Arial, Helvetica, sans-serif;"> is super admin</label>
+              <label for="#" style="color:aliceblue;font-family: Arial, Helvetica, sans-serif; margin-top: 0.7rem;"> is super admin</label>
             </div>
             </div>
-            <p style="padding: 0.7rem;"> By granting this user super admin rights,you will give them full control over all possible operations on the website</p>
+            <p style="padding: 0.7rem;">By granting this user super admin rights,you will give them full control over all possible operations on the website</p>
             </div> <br>
           
             </div><br>
@@ -491,12 +491,18 @@
                     </div>
                   </div><br>
                   <hr><br>
-                  <div class="row links-title">
-                    <h3 class="Personnal-informations"> Groups</h3>
-                  <div>
-                     <h3 class="Personnal-informations "> All Permissions </h3>
+
+                <div class="form-group row"> 
+                  <div class="col">
+                    <h3 class="Personnal-informations"> Groups</h3> 
+                    <div id="the-basics"> </div>
                   </div>
-                </div><br>
+                  <div class="col">
+                    <h3 class="Personnal-informations "> All Permissions </h3>
+                    <div id="bloodhound"> </div>
+                  </div>
+                </div>
+
                 <div class="form-group row"> 
                     <div class="col">
                       <label class="links">Total number of groups</label>
@@ -511,7 +517,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="form-group row"> 
                     <div class="col">
                       <div id="the-basics">    
@@ -525,79 +530,66 @@
                     </div>
                   </div>
 
+                  
                   <div class="form-group row"> 
                     <div class="col">
+                      <div class="flex">  
                       <label class="links">Group</label>
-                      <div id="the-basics">
-                        <input class="typeahead" type="text" placeholder="teacher">
-                      </div>           
-                    </div>             
-                    <div class="badge badge-outline-success btn-profile Check"><a href="#">Check</a></div>
+                      <label class="links margin-left-l">date of creation: 20/07/2024</label>
+                    </div>
+                              <div class="flex">
+                               <div>
+                                  <input required="" placeholder="teacher" type="text" class="input typeahead">
+                               </div>
+                               <div class="badge badge-outline-success btn-profile"><a href="Check_courses.html">Check</a></div>
+                          </div>                     
+                    </div>
 
                     <div class="col">
-                      <label class="links">permissions</label>
+                      <div class="flex">  
+                      <label class="links">permission </label>
+                       </div>
                       <div id="bloodhound">
                         <input class="typeahead" type="text" placeholder="see teacher’s space">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group row"> 
-                    <div class="col">
-                      <div id="the-basics"> </div>
-                    </div>
-                    <div class="col">
+                      </div><br>
                       <div id="bloodhound">
                         <input class="typeahead" type="text" placeholder="see teacher’s space">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group row"> 
-                    <div class="col">
-                      <div id="the-basics"> </div>
-                    </div>
-                    <div class="col">
+                      </div><br>
                       <div id="bloodhound">
                         <input class="typeahead" type="text" placeholder="see teacher’s space">
+                      </div><br>
+                  
+                      <div class="flex">  
+                        <label class="links margin-left-l">date of creation: 20/07/2024</label>
                       </div>
+                         <div class="flex">
+                          <div>
+                             <input required="" placeholder="perm 4 (libre)" type="text" class="typeahead"style="width: 23vw;">
+                          </div>
+                          <div class="badge badge-outline-danger">Delete</div> 
+                         </div> 
+                         <div class="flex">  
+                          <label class="links margin-left-l">date of creation: 20/07/2024</label>
+                        </div>
+                           <div class="flex">
+                            <div>
+                               <input required="" placeholder="perm 4 (libre)" type="text" class="typeahead"style="width: 23vw;">
+                            </div>
+                            <div class="badge badge-outline-danger">Delete</div> 
+                           </div> 
+                           <div class="flex">  
+                            <label class="links margin-left-l">date of creation: 20/07/2024</label>
+                          </div>
+                             <div class="flex">
+                              <div>
+                                 <input required="" placeholder="perm 4 (libre)" type="text" class="typeahead" style="width: 23vw;">
+                              </div>
+                              <div class="badge badge-outline-danger">Delete</div> 
+                             </div> 
+                                         
                     </div>
+               
                   </div>
-
-                  <div class="form-group row"> 
-                    <div class="col">
-                      <div id="the-basics"> </div>
-                    </div>
-                    <div class="col">
-                      <div id="bloodhound">
-                        <input class="typeahead" type="text" placeholder="see teacher’s space">
-                      </div>
-                    </div>
-                    <div class="badge badge-outline-danger">Delete</div> 
-                  </div>
-                  <div class="form-group row"> 
-                    <div class="col">
-                      <div id="the-basics"> </div>
-                    </div>
-                    <div class="col">
-                      <div id="bloodhound">
-                        <input class="typeahead" type="text" placeholder="see teacher’s space">
-                      </div>
-                    </div>
-                    <div class="badge badge-outline-danger">Delete</div>
-                  </div>
-                  <div class="form-group row"> 
-                    <div class="col">
-                      <div id="the-basics"> </div>
-                    </div>
-                    <div class="col">
-                      <div id="bloodhound">
-                        <input class="typeahead" type="text" placeholder="see teacher’s space">
-                      </div>
-                    </div>
-                    <div class="badge badge-outline-danger">Delete</div>
-                  </div>
-
                 <br></form><br>
               </div>
             </div>

@@ -11494,18 +11494,16 @@ input[type="button"].btn-block {
   align-items: center;
   color: white;
  }
- 
  .checkbox-con input[type="checkbox"] {
   appearance: none;
   width: 48px;
-  height: 27px;
+  height: 25px;
   border: 2px solid #ff0000;
   border-radius: 20px;
   background: #f1e1e1;
   position: relative;
   box-sizing: border-box;
  }
- 
  .checkbox-con input[type="checkbox"]::before {
   content: "";
   width: 14px;
@@ -11546,7 +11544,46 @@ input[type="button"].btn-block {
   cursor: pointer;
   user-select: none;
  }
- 
+.icon-exclamation{
+position: relative;
+right:26.5%;
+font-size:25px;
+color: #fc424a;
+}
+
+
+
+
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 .card {
   position: relative;
   display: flex;
