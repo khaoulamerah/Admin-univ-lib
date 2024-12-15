@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Corona Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End Plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_sidebar.html -->
+      
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="index.html"><img src="../../assets/images/logo.svg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="../../assets/images/faces/face15.jpg" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal ">John doe</h5>
+                  <span>Gold Member</span>
+                </div>
+              </div>
+              <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-settings text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-onepassword  text-info"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-calendar-today text-success"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../../index.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">data management</span>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </span>
+              <span class="menu-title">Students</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../student-space/New-account.html">New accounts</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../student-space/new-enrollements.html">new enrollements</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../student-space/All-students.html">All students</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="Teachers.html">
+              <span class="menu-icon">
+                <i class="fa-solid fa-clipboard"></i>
+              </span>
+              <span class="menu-title">Teachers</span>
+            </a>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="fa-solid fa-globe"></i>
+              </span>
+              <span class="menu-title">Formations & groups</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../informations-groupes/Languages.html">Languages</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../informations-groupes/courses.html">Courses</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../informations-groupes/Groups.html">Groups</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Teacher’s space</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../student-lists/student_lists.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-calendar text-success"></i>
+              </span>
+              <span class="menu-title">Students lists</span>
+            </a>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../Marks/Marks.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-calendar text-success"></i>
+              </span>
+              <span class="menu-title">Marks</span>
+            </a>
+          </li>
+
+          <li class="nav-item nav-category">
+            <span class="nav-link">Accountant space</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../Paiement/paiement.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-calendar text-success"></i>
+              </span>
+              <span class="menu-title">Paiement</span>
+            </a>
+          </li>
+
+          <li class="nav-item nav-category">
+            <span class="nav-link">Admin tools</span>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-calendar text-success"></i>
+              </span>
+              <span class="menu-title">Permissions</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../Permission/all_accounts.html">all accounts</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../Permission/all_permissions.html">all permissions</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../Permission/permission_groups.html">permissions groups</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="../History/history.html" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </span>
+              <span class="menu-title">history</span>
+              <i class="menu-arrow"></i>
+            </a>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="fa-solid fa-globe"></i>
+              </span>
+              <span class="menu-title">Logs</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item nav-category">
+            <span class="nav-link">Website</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="../Announces/Announces.html" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="fa-solid fa-globe"></i>
+              </span>
+              <span class="menu-title">Announcements</span>
+              <i class="menu-arrow"></i>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="fa-regular fa-message"></i>
+              </span>
+              <span class="menu-title">Messages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item nav-category">
+            <span class="nav-link">Settings</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="fa-solid fa-gear"></i>
+              </span>
+              <span class="menu-title">Settings</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <h3 class="color-size">ILTC</h3>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+                <!----
+                icon dark mode here 
+                -->
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <p class="color-size"><i class="fa-regular fa-message icon-color"></i> Messages <i class="fa-solid fa-angle-down"></i></p>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                  <h6 class="p-3 mb-0">Messages</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="../../assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Mark send you a message</p>
+                      <p class="text-muted mb-0"> 1 Minutes ago </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="../../assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
+                      <p class="text-muted mb-0"> 15 Minutes ago </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="../../assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
+                      <p class="text-muted mb-0"> 18 Minutes ago </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">4 new messages</p>
+                </div>
+              </li>
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <p class="color-size"><i class="fa-regular fa-bell icon-color"></i> Notifications <i class="fa-solid fa-angle-down"></i></p>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <h6 class="p-3 mb-0">Notifications</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-calendar text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Event today</p>
+                      <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                      <p class="text-muted ellipsis mb-0"> Update dashboard </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-link-variant text-warning"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Launch Admin</p>
+                      <p class="text-muted ellipsis mb-0"> New admin wow! </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">See all notifications</p>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <img class="img-xs rounded-circle" src="../../assets/images/faces/face15.jpg" alt="">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name color-size">John doe</p>
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                  <h6 class="p-3 mb-0">Profile</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+
+
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+           <!------here title -->
+           <div>
+            <div class="row ligne">
+              <h4 class="link-ligne-1">Teachers</h4>
+              <div class="badge badge-outline-success btn-profile">Export</div>
+            </div><br>
+            <div class="row ligne"> 
+              <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search form-column">
+                <input type="text" class="form-control" placeholder=" Type to search">
+                <span class="links">0 out of 235 results selected</span>
+              </form>
+             <div> 
+              <div class="badge badge-outline-success btn-profile">Add new teachers</div>
+             <div class="badge badge-outline-danger">Delete</div>
+             </div>
+              <select name="select" id="#"class="Filtre badge badge-outline-success btn-profile">
+                <option value="#">Filters</option> 
+                <option value="name">Name</option> 
+                <option value="registration">Date of registration</option> 
+                <option value="">Language and level</option> 
+              </select>
+           
+            </div><br>
+           </div>
+           <div class="row ">
+            <div class="col-12 grid-margin">
+              <div class="card">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>
+                          </th>
+                          <th>pic</th>
+                          <th> First name </th>
+                          <th> Last name </th>
+                          <th> Email</th>
+                          <th> Phone </th>
+                          <th> Gender</th>
+                          <th> id </th>
+                          <th> Groupe</th>
+                          <th> Status </th>
+                          <th> action </th>
+                          <th> Profile</th>
+                          <th> date </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <a href="#"> 
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td>0500000</td>
+                          <td>male</td>
+                          <td>98645332</td>
+                          <td>2</td>
+                          <td>
+                            <div class="badge badge-outline-success">Working</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">Delete</div> 
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td>0500000</td>
+                          <td>male</td>
+                          <td>98645332</td>
+                          <td>2</td>
+                          <td>
+                            <div class="badge badge-outline-danger">pending</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">Delete</div> 
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+                         
+                        <tr>
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td>0500000</td>
+                          <td>female</td>
+                          <td>98645332</td>
+                          <td>4</td>
+                          <td>
+                            <div class="badge badge-outline-danger">pending</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">Delete</div> 
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td>0500000</td>
+                          <td>male</td>
+                          <td>98645332</td>
+                          <td>1</td>
+                          <td>
+                            <div class="badge badge-outline-success">Working</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">Delete</div> 
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td>0500000</td>
+                          <td>female</td>
+                          <td>98645332</td>
+                          <td>3</td>
+                          <td>
+                            <div class="badge badge-outline-danger">pending</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">Delete</div> 
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td>0500000</td>
+                          <td>male</td>
+                          <td>98645332</td>
+                          <td>4</td>
+                          <td>
+                            <div class="badge badge-outline-success">Working</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">Delete</div> 
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="../../assets/images/faces/face1.jpg" alt="image" />
+                          </td>
+                          <td><span class="pl-2">Henry</span></td>
+                          <td> Klein</td>
+                          <td> test@gmail.com </td>
+                          <td>0500000</td>
+                          <td>female</td>
+                          <td>98645332</td>
+                          <td>2</td>
+                          <td>
+                            <div class="badge badge-outline-danger">pending</div>
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-danger">Delete</div> 
+                          </td>
+                          <td>
+                            <div class="badge badge-outline-success btn-profile"><a href="profile-teachers.html">Profile</a></div>
+                          </td>
+                          <td>24/07/2024</td>
+                        </tr>
+                       
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row links">
+           <div class="links"><a href="#"><i class="fa-solid fa-angle-left"></i> Go back </a></div>
+           <div class="links">1 out of 25 pages </div>
+           <div class="links"><a href="#"> See more<i class="fa-solid fa-angle-right"></i></a></div>
+          </div>
+
+          </div>
+          <!-- content-wrapper ends -->
+           <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Developped by TechGeeks Guelma</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © Version</span>
+            </div>
+        </footer>
+         <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+
+
+
+
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/todolist.js"></script>
+    <!-- endinject -->
+  </body>
+</html>
